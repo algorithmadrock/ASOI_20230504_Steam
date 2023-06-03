@@ -46,11 +46,11 @@ public class Controller {
 	public static void registro(int ano, String mes, String nome) throws IOException {
 		JOptionPane.showMessageDialog(null, "O diretório será sempre o 'C:/sistemas operacionais i/<arquivo>.csv'!");
 			
-		File arq = new File("C:\\sistemas operacionais i\\", nome + ".csv"); //diretório e arquivo são enxergues como a mesma coisa
+		File arq = new File("C:\\sistemas operacionais i\\ASOI_20230504_Steam\\", nome + ".csv"); //diretório e arquivo são enxergues como a mesma coisa
 		boolean existe =  false;	
 		if (arq.exists()) {	existe = true; }
 
-		File arquivo = new File("C:\\sistemas operacionais i\\steam_charts.csv");
+		File arquivo = new File("C:\\sistemas operacionais i\\ASOI_20230504_Steam\\steam_charts.csv");
 		
 		FileInputStream fluxo = new FileInputStream(arquivo);
 		InputStreamReader leitor = new InputStreamReader(fluxo);
